@@ -11,9 +11,9 @@ HTTPS client to use AdGuard's DoH endpoint, with fallback to plain DNS to the sa
 still filters.
 
 Only name resolution changes. Nothing sits between your applications and the network. A filtering
-driver or local proxy, by contrast, sits in the path of every connection, loopback ones included
-(a local Remote Desktop session, a local web server), and anything that resets or restarts that
-filter ends those connections. DNS blocking has no such failure mode.
+driver or local proxy, by contrast, sits in the path of every connection, loopback ones included,
+so a restart or reset of that filter can end local connections such as a Remote Desktop session.
+DNS blocking does not add that failure mode.
 
 ## Usage
 
